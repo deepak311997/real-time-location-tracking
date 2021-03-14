@@ -1,0 +1,165 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.1646273343, 39.1199273249]
+      },
+      "type": "Feature",
+      "properties": {
+        "description": "Shady Grove",
+        "marker-symbol": "rail-metro",
+        "title": "Shady Grove",
+        "url": "http://www.wmata.com/rider_tools/pids/showpid.cfm?station_id=18",
+        "lines": ["Red"],
+        "address": "15903 Somerville Drive, Rockville, MD 20855"
+      }
+    },
+    {
+      "id": 2,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.1461253392, 39.0843216075]
+      },
+      "type": "Feature",
+      "properties": {
+        "description": "Rockville",
+        "marker-symbol": "rail-metro",
+        "title": "Rockville",
+        "url": "http://www.wmata.com/rider_tools/pids/showpid.cfm?station_id=17",
+        "lines": ["Red"],
+        "address": "251 Hungerford Drive, Rockville, MD 20850"
+      }
+    },
+    {
+      "id": 3,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.1208179517, 39.0624676517]
+      },
+      "type": "Feature",
+      "properties": {
+        "description": "Twinbrook",
+        "marker-symbol": "rail-metro",
+        "title": "Twinbrook",
+        "url": "http://www.wmata.com/rider_tools/pids/showpid.cfm?station_id=16",
+        "lines": ["Red"],
+        "address": "1600 Chapman Avenue, Rockville, MD 20852"
+      }
+    },
+    {
+      "id": 4,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.0930339, 39.0381647]
+      },
+      "type": "Feature",
+      "properties": {
+        "description": "Garrett Park",
+        "marker-symbol": "rail-metro",
+        "title": "GarrettPark",
+        "url": "http://www.wmata.com/rider_tools/pids/showpid.cfm?station_id=16",
+        "lines": ["Red"],
+        "address": "1600 garrett park, MD 20852"
+      }
+    },
+    {
+      "id": 5,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.0310178268, 38.9939493747]
+      },
+      "type": "Feature",
+      "properties": {
+        "description": "Silver Spring",
+        "marker-symbol": "rail-metro",
+        "title": "Silver Spring",
+        "url": "http://www.wmata.com/rider_tools/pids/showpid.cfm?station_id=31",
+        "lines": ["Red"],
+        "address": "8400 Colesville Road, Silver Spring, MD 20910"
+      }
+    },
+    {
+      "id": 6,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.0181766987, 38.976078531]
+      },
+      "type": "Feature",
+      "properties": {
+        "description": "Takoma",
+        "marker-symbol": "rail-metro",
+        "title": "Takoma",
+        "url": "http://www.wmata.com/rider_tools/pids/showpid.cfm?station_id=29",
+        "lines": ["Red"],
+        "address": "327 Cedar Street NW, Washington, DC 20012"
+      }
+    },
+    {
+      "id": 7,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.0022030768, 38.9518467675]
+      },
+      "type": "Feature",
+      "properties": {
+        "description": "Fort Totten",
+        "marker-symbol": "rail-metro",
+        "title": "Fort Totten",
+        "url": "http://www.wmata.com/rider_tools/pids/showpid.cfm?station_id=28",
+        "lines": ["Green", "Yellow", "Red"],
+        "address": "550 Galloway Street NE, Washington, DC 20011"
+      }
+    },
+    {
+      "id": 8,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.9945342851, 38.9332109913]
+      },
+      "type": "Feature",
+      "properties": {
+        "description": "Brookland",
+        "marker-symbol": "rail-metro",
+        "title": "Brookland",
+        "url": "http://www.wmata.com/rider_tools/pids/showpid.cfm?station_id=27",
+        "lines": ["Red"],
+        "address": "801 Michigan Avenue NE, Washington, DC 20017"
+      }
+    },
+    {
+      "id": 9,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.9959369166, 38.9210596891]
+      },
+      "type": "Feature",
+      "properties": {
+        "description": "Rhode Island Avenue",
+        "marker-symbol": "rail-metro",
+        "title": "Rhode Island Avenue",
+        "url": "http://www.wmata.com/rider_tools/pids/showpid.cfm?station_id=26",
+        "lines": ["Red"],
+        "address": "919 Rhode Island Avenue NE, Washington, DC 20018"
+      }
+    },
+    {
+      "id": 10,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.0074142921, 38.8977660392]
+      },
+      "type": "Feature",
+      "properties": {
+        "description": "Union Station",
+        "marker-symbol": "rail-metro",
+        "title": "Union Station",
+        "url": "http://www.wmata.com/rider_tools/pids/showpid.cfm?station_id=25",
+        "lines": ["Red"],
+        "address": "701 First St. NE, Washington, DC 20002"
+      }
+    }
+  ]
+}
