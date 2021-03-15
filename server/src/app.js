@@ -13,7 +13,7 @@ const {getConfiguration} = require('./config/index');
 const routes = require('./routes');
 
 const config = getConfiguration();
-const port = config.port || process.env.PORT;
+const port = process.env.PORT || config.port;
 
 const app = express();
 
