@@ -2,7 +2,8 @@ import React, {Fragment, useState} from 'react';
 import axios from 'axios';
 
 import MapComponent from './map-component';
-import useConnect from '../hooks/useConnect';
+import useConnect from './hooks/useConnect';
+import ErrorBoundary from './error/error-boundary';
 
 export default function AppComponent() {
   const [isPublishing, setPublishState] = useState(false);
@@ -63,7 +64,9 @@ export default function AppComponent() {
           </button>
         </div>
       </div>
-      <MapComponent geoData={payload} />
+      <ErrorBoundary>
+        <MapComponent geoData={payload} />
+      </ErrorBoundary>
     </Fragment>
   );
 }
