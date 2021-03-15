@@ -1,4 +1,4 @@
-# calender-my-tasks
+# Real time location tracking
 
 Problem statement:
     Using MQTT create React app which subscribes to a topic and plots route and a nodejs server which publishes the coordinates
