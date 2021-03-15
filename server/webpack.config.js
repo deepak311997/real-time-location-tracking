@@ -8,7 +8,7 @@ module.exports = {
   },
   mode: 'development',
   target: 'node',
-  entry: path.resolve(__dirname, 'src', 'app.js'),
+  entry: path.resolve(__dirname, 'app.js'),
   output: {
     path: path.resolve(__dirname, '../build', 'server'),
     pathinfo: true,
@@ -20,8 +20,8 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin('server'),
     new CopyWebpackPlugin([
-      {from: path.resolve(__dirname, 'src', 'config.json'), to: ''},
-      {from: path.resolve(__dirname, 'src', 'geoJson.json'), to: ''},
+      {from: path.resolve(__dirname, 'config.json'), to: ''},
+      {from: path.resolve(__dirname, 'geoJson.json'), to: ''},
     ]),
   ],
 };

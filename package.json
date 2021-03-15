@@ -6,7 +6,7 @@
   "scripts": {
     "start:client": "webpack serve --open 'Google Chrome' --config ./client/webpack.config.js",
     "build:client": "webpack --mode production --config ./client/webpack.config.js",
-    "start:server": "nodemon ./server/src/app.js",
+    "start:server": "nodemon ./server/app.js",
     "build:server": "webpack --mode production --config ./server/webpack.config.js",
     "build": "npm run build:client && npm run build:server",
     "format": "npx prettier --write",

@@ -9,7 +9,7 @@ const startPublishing = async (req, res) => {
         path.join(
           process.env.NODE_ENV !== 'production'
             ? path.resolve(__dirname, '..')
-            : path.resolve(__dirname),
+            : path.resolve('./server/'),
           'geoJson.json'
         )
       )

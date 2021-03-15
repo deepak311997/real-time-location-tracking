@@ -8,8 +8,7 @@ const mqttOptions = {
   clientId: 'serverId-rtlt8147900416',
   reconnectPeriod: 5000,
 };
-const brokerEndpoint = process.env.NODE_ENV !== 'production' ? 'mqtt://broker.hivemq.com' : 'mqtts://broker.hivemq.com';
-const broker = MQTT.connect(brokerEndpoint, mqttOptions);
+const broker = MQTT.connect('mqtt://broker.hivemq.com', mqttOptions);
 const {getConfiguration} = require('./config/index');
 const routes = require('./routes');
 
@@ -22,7 +21,7 @@ broker.on('connect', () => {
   app.use(bodyParser.json());
   app.use(cors());
   app.use('/api/', routes);
-  app.use(express.static(path.join(__dirname, '../../build/client')));
+  app.use(express.static(path.join(__dirname, '../client')));
 
   app.listen(port, () => {
     console.log(`Real time location server is running on port ${port}`);
