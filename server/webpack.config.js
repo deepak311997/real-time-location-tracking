@@ -13,7 +13,9 @@ module.exports = {
     path: path.resolve(__dirname, '../build', 'server'),
     pathinfo: true,
     filename: 'server.js',
-    publicPath: '/',
+  },
+  node: {
+    __dirname: true
   },
   plugins: [
     new CleanWebpackPlugin('server'),

@@ -5,11 +5,10 @@ function getConfiguration() {
   let confdata;
 
   try {
-    const filePath =
-      process.env.NODE_ENV !== 'production'
-        ? path.join(path.resolve(__dirname, '..'), 'config.json')
-        : './config.json';
+    const filePath = path.join(process.env.NODE_ENV !== 'production' ? path.resolve(__dirname, '..')
+    : path.resolve('./build/server/'), 'config.json');
 
+    console.log(filePath)
     confdata = JSON.parse(fs.readFileSync(filePath));
   } catch (error) {
     console.error(`Configuration Error: ${error.message}`);
