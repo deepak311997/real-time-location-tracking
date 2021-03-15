@@ -28,16 +28,18 @@ export default function useConnect() {
     }
   }, [client]);
 
-  const mqttConnect = () => {
+  const mqttConnect = useCallback(() => {
+    const isProd = process.env.NODE_ENV !== 'production';
+
     setConnectionStatus('Connecting');
     setClient(
-      MQTT.connect('mqtt://broker.hivemq.com:8000/mqtt', {
+      MQTT.connect(`${isProd ? 'wss' : 'ws'}://broker.hivemq.com:8000/mqtt'`, {
         protocol: 'mqtt',
         clientId: 'clientId-rtlt8147900416',
         reconnectPeriod: 5000,
       })
     );
-  };
+  }, []);
 
   const mqttDisconnect = useCallback(() => {
     if (client) {
