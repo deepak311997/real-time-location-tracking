@@ -5,10 +5,11 @@ const bodyParser = require('body-parser');
 const MQTT = require('./config/data-access');
 
 const mqttOptions = {
-  protocol: 'mqtt',
   clientId: 'serverId-rtlt8147900416',
+  reconnectPeriod: 5000,
 };
-const broker = MQTT.connect('mqtt://broker.hivemq.com', mqttOptions);
+const brokerEndpoint = process.env.NODE_ENV !== 'production' ? 'mqtt://broker.hivemq.com' : 'mqtts://broker.hivemq.com';
+const broker = MQTT.connect(brokerEndpoint, mqttOptions);
 const {getConfiguration} = require('./config/index');
 const routes = require('./routes');
 

@@ -29,12 +29,11 @@ export default function useConnect() {
   }, [client]);
 
   const mqttConnect = useCallback(() => {
-    const isProd = process.env.NODE_ENV !== 'production';
-
+    const brokerEndpoint = process.env.NODE_ENV !== 'production' ? 'mqtt://broker.hivemq.com:8000/mqtt' : 'mqtts://broker.hivemq.com:8000/mqtts';
+    
     setConnectionStatus('Connecting');
     setClient(
-      MQTT.connect(`${isProd ? 'wss' : 'ws'}://broker.hivemq.com:8000/mqtt'`, {
-        protocol: 'mqtt',
+      MQTT.connect(brokerEndpoint, {
         clientId: 'clientId-rtlt8147900416',
         reconnectPeriod: 5000,
       })

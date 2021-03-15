@@ -29,11 +29,11 @@ module.exports = {
     new CopyWebpackPlugin([{from: path.resolve(__dirname, 'public'), to: 'assets/'}]),
   ],
   devServer: {
-    port: 8000,
+    port: 8080,
     contentBase: './dist',
     proxy: {
       '/api/**': {
-        target: 'http://localhost:8001/',
+        target: 'http://localhost:8000/',
       },
     },
   },

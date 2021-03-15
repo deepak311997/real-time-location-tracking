@@ -19,7 +19,8 @@ export default function AppComponent() {
   const isConnected = connectionStatus === 'Connected';
 
   const onPublish = () => {
-    axios.post('/api/start').then(() => console.log('Publishing'));
+    setPublishState(true);
+    axios.post('/api/start').then(() => setPublishState(false)).catch(() => setPublishState(false));
   };
 
   return (

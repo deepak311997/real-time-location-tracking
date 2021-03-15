@@ -9,7 +9,7 @@ class MqttHandler {
     this.MQTTBroker = mqtt.connect(host, options);
 
     this.MQTTBroker.on('connect', () => {
-      console.log('MQTT connected to "rtlt/location" using mqtt://broker.hivemq.com');
+      console.log(`MQTT connected to "rtlt/location" using ${host}`);
     });
 
     this.MQTTBroker.on('error', (err) => {
