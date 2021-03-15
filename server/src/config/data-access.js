@@ -6,6 +6,7 @@ class MqttHandler {
   }
 
   connect(host, options = {}) {
+    console.log(`MQTT connecting to "rtlt/location" using ${host}`);
     this.MQTTBroker = mqtt.connect(host, options);
 
     this.MQTTBroker.on('connect', () => {
